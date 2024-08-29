@@ -1,0 +1,119 @@
+:root {
+  --background: #252526;
+  --background-darker: #1e1e1e;
+  --color: #dfdfdf;
+
+  --button-bg: #007acc;
+
+  --input-bg: #2d2d30;
+  --input-color: #dfdfdf;
+  --input-border: #3e3e42;
+  --input-outline: #007acc;
+
+  --divider: #3e3e42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: var(--background-darker);
+  color: var(--color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 6px;
+
+  border: 1px solid var(--input-border);
+  outline-color: var(--input-outline);
+
+  background-color: var(--input-bg);
+  color: var(--input-color);
+}
+
+select {
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 6px;
+
+  border: 1px solid var(--input-border);
+  outline-color: var(--input-outline);
+
+  background-color: var(--input-bg);
+  color: var(--input-color);
+}
+
+button {
+  font-weight: 500;
+
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 4px;
+
+  border: 1px solid rgb(28, 21, 34);
+  background-color: var(--button-bg);
+  color: #fff;
+
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 720px;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control + .control {
+  margin-top: 16px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.divider {
+  border-bottom: 1px solid var(--divider);
+
+  margin: 16px 0;
+}
+
+.ex05-list {
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 8px 16px;
+}
+
+ul li + li {			
+  border-top: 1px solid var(--divider);
+}
