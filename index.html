@@ -9,15 +9,37 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="control">
-          <label for="ex01">Exercício 01</label>
-          <input
-            type="number"
-            name="ex01"
-            id="ex01"
-            placeholder="Número"
-          />
-          <button type="button" onclick="exec01()">Executar</button>
+
+        <div class="card">
+          <h3 class="title">Novo Usuário</h3>
+
+          <div class="control">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              name="new-name"
+              id="name"
+              autocomplete="new-name"
+              placeholder="Insira o nome"
+            />     
+            <span class="error" id="name-error"></span>    
+          </div>
+
+          <div class="control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="new-email"
+              autocomplete="new-email"
+              id="email"
+              placeholder="Insira o email"
+            />   
+            <span class="error" id="email-error"></span>        
+          </div>
+
+          <div class="card-footer">
+            <button type="button" onclick="adicionar()">Adicionar</button>
+          </div>
         </div>
 
         <div class="divider"></div>        
