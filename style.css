@@ -127,3 +127,14 @@ ul li {
 ul li + li {			
   border-top: 1px solid var(--divider);
 }
+
+tbody tr{
+  text-align: center;
+  height: 32px;
+
+}
+
+tbody tr:nth-child(even){ 
+  background-color:var(--input-bg);
+  height: 32px;
+}
